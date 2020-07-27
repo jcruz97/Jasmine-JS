@@ -54,20 +54,25 @@ let InverseString =  (texte) => {
  * Exercices sur les nombres et les caluls mathématiques
  */
 let calculPuissance =  (x, y) => {
-
+    let calc = x**y;
+    return calc;
 }
 let valeurAbsolue =  (nombre) => {
-
+    return Math.abs(nombre);
 }
 let valeurAbsolueArray =  (array) => {
-
+    let arrayAbs = array.map(Math.abs);
+    return arrayAbs;
 }
 let sufaceCercle =  (rayon) => {
-
+    let surface = Math.PI*(rayon**2);
+    return Math.round(surface);
 }
 let hypothenuse =  (ab, ac) => {
-
+    let bc = (ab**2+ac**2)**(1/2);
+    return bc;
 }
 let calculIMC =  (poids, taille) => {
-
+    let imc = poids/(taille*taille);
+    return Number(imc.toFixed(2));
 }
