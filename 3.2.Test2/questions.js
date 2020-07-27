@@ -20,29 +20,36 @@ let AjoutElementLangages =  (langages) => {
 }
 
 let AjoutElementNombres =  (nombres) => {
-
+    nombres.splice(0,0,-2,-1);
+    return nombres;
 }
 
 let SuppressionPremierElement =  (langages) => {
-
+    langages.splice(0,1);
+    return langages;
 }
 
 let SuppressionDernierElement =  (langages) => {
-
+    langages.splice(4,1);
+    return langages;
 }
 
 let ConversionChaineTableau =  (reseaux_sociaux_chaine) => {
-
+    let arr = reseaux_sociaux_chaine.split(",");
+    return arr;
 }
 
 let ConversionTableauChaine =  (langages) => {
-
+    let str = langages.toString(",");
+    return str;
 }
 
 let TriTableau =  (reseaux_sociaux) => {
-
+    reseaux_sociaux.sort();
+    return reseaux_sociaux;
 }
 
 let InversionTableau =  (reseaux_sociaux) =>{
-
+    reseaux_sociaux.reverse();
+    return reseaux_sociaux;
 }
