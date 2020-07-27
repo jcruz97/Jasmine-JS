@@ -29,17 +29,25 @@ let SupprEspaceString =  (texte) => {
     return res2;
 }
 let IsString =  (texte) => {
-
+    if (typeof texte==="string"){
+        return true;
+    }
 }
 
 let AfficherExtensionString =  (texte) => {
-
+    let extension = texte.substr(texte.lastIndexOf('.')+1);
+    return extension;
 }
 let NombreEspaceString =  (texte) => {
-
+    let count = (texte.split(" ").length -1);
+    return count;
 }
 let InverseString =  (texte) => {
-
+    let invertedTxt = "";
+    for (let i=texte.length -1; i>=0; i--){
+        invertedTxt += texte[i];
+    }
+    return invertedTxt;
 }
 
 /**
