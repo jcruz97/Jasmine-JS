@@ -83,19 +83,29 @@ let longestWord = (array) => {
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    let sum = 0;
+
+    for (let number of array){
+        sum = sum + number;
+    }
+    return sum;
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+    return array.concat(array);
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return Number(string);
 }
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    let sum = 0;
+
+    for (let number of array){
+        sum = sum + number;
+    }
+    return (sum/array.length);
 }
 
 let getElementsUntilGreaterThanFive = (array) => {
@@ -117,7 +127,6 @@ let swapKeysAndValues = (object) => {
 let sumKeysAndValues = (object) => {
     return 'Write your method here';
 }
-
 let removeCapitals = (string) => {
     return 'Write your method here';
 }
@@ -131,7 +140,10 @@ let formatDateNicely = (date) => {
 }
 
 let getDomainName = (string) => {
-    return 'Write your method here';
+    let domain = string.substring(string.lastIndexOf("@") +1);
+    let noCom = domain.replace(".com","");
+    return noCom;
+    
 }
 
 let titleize = (string) => {
@@ -143,7 +155,7 @@ let checkForSpecialCharacters = (string) => {
 }
 
 let squareRoot = (number) => {
-    return 'Write your method here';
+    return Math.sqrt(number);
 }
 
 let factorial = (number) => {
